@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Esquina del Gato</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .header, .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+        }
+        .header .navbar-brand, .footer h5 {
+            color: #ffffff;
+        }
+        .section-title {
+            margin: 30px 0;
+            text-align: center;
+            color: #343a40;
+        }
+        .section-content {
+            padding: 20px;
+        }
+        .card {
+            border: none;
+            margin-bottom: 20px;
+        }
+        .card img {
+            max-height: 200px;
+            object-fit: cover;
+        }
+        .btn-custom {
+            background-color: #343a40;
+            color: #ffffff;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #495057;
+        }
+        .social-icon {
+            color: #ffffff;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        .social-icon:hover {
+            color: #adb5bd;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .footer-content .column {
+            flex: 1;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">La Esquina del Gato</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vision">Visión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mision">Misión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Vision Section -->
+        <section id="vision" class="section-content">
+            <h2 class="section-title">Nuestra Visión</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>En La Esquina del Gato, nuestra visión es transformar la vida de los gatos y sus dueños ofreciendo productos personalizados y ecológicos que promuevan un ambiente saludable y feliz para los felinos. Buscamos ser líderes en innovación y sostenibilidad en el mercado de accesorios y muebles para gatos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mision Section -->
+        <section id="mision" class="section-content bg-light">
+            <h2 class="section-title">Nuestra Misión</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Nuestra misión en La Esquina del Gato es ofrecer a nuestros clientes muebles y accesorios para gatos que sean tanto elegantes como funcionales, hechos con materiales ecológicos y orgánicos. Nos esforzamos por brindar productos de alta calidad que promuevan el bienestar de los gatos y la satisfacción de sus dueños, mientras cuidamos nuestro planeta.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Productos Section -->
+        <section id="productos" class="section-content">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Mueble Personalizado">
+                            <div class="card-body">
+                                <h5 class="card-title">Mueble Personalizado</h5>
+                                <p class="card-text">Muebles diseñados a medida para que tu gato tenga el lugar perfecto para relajarse.</p>
+                                <a href="#" class="btn btn-custom">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Snacks Saludables">
+                            <div class="card-body">
+                                <h5 class="card-title">Snacks Saludables</h5>
+                                <p class="card-text">Deliciosos snacks horneados en casa, orgánicos y perfectos para la dieta de tu gato.</p>
+                                <a href="#" class="btn btn-custom">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Accesorios Ecológicos">
+                            <div class="card-body">
+                                <h5 class="card-title">Accesorios Ecológicos</h5>
+                                <p class="card-text">Accesorios fabricados con materiales reciclados y ecológicos para el bienestar de tu gato.</p>
+                                <a href="#" class="btn btn-custom">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Juguetes Interactivos">
+                            <div class="card-body">
+                                <h5 class="card-title">Juguetes Interactivos</h5>
+                                <p class="card-text">Juguetes diseñados para estimular mentalmente a tu gato y mantenerlo activo.</p>
+                                <a href="#" class="btn btn-custom">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Rascadores Naturales">
+                            <div class="card-body">
+                                <h5 class="card-title">Rascadores Naturales</h5>
+                                <p class="card-text">Rascadores fabricados con materiales naturales para mantener las uñas de tu gato saludables.</p>
+                                <a href="#" class="btn btn-custom">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Camas Orgánicas">
+                            <div class="card-body">
+                                <h5 class="card-title">Camas Orgánicas</h5>
+                                <p class="card-text">Camas suaves y cómodas hechas con materiales orgánicos para el descanso de tu gato.</p>
+                                <a href="#" class="btn btn-custom">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section id="contacto" class="section-content bg-light">
+            <h2 class="section-title">Contacto</h2>
+            <div class="container">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Tu Nombre" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="Tu Correo Electrónico" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Tu Mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-custom">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="columna mb-4 mb-md-0">
+                <h3 class="titulo-columna">Acerca de Nosotros</h3>
+                <p class="texto-columna">Somos una tienda dedicada al cuidado y bienestar de tu mascota.</p>
+            </div>
+            <div class="columna mb-4 mb-md-0">
+                <h3 class="titulo-columna">Contacto</h3>
+                <p class="texto-columna">Teléfono: 123-456789<br>Email: info@esquinagato.com</p>
+            </div>
+            <div class="siguenos text-center">
+                <h3 class="texto-siguenos">Síguenos en redes sociales</h3>
+                <div class="redes-sociales">
+                    <a href="#" class="social-icon text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon text-white mx-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon text-white mx-2"><i class="fab fa-instagram"></i></a>
+                    <!-- Agregar más redes sociales según sea necesario -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap and FontAwesome JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zyh93S6n7r9OqXgKzYXnix6dDxIkv6J0/fcb5da" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb9dF52z4Roh2wXl6m0hE4OT8nYVj9Uq7imK8T8xuW9oL0FTr" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-1gXwsmWchY9k9PQxg4wx+eOt8PRA+oyz3d+6tFMEIR3SZ02RrjYDp5Q4O+iW0zW6" crossorigin="anonymous"></script>
+</body>
+</html>

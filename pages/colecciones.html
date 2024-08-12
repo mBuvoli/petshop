@@ -1,268 +1,244 @@
-    <!DOCTYPE html>
-    <html lang="en">
-        <link href="../css/estilo.css" rel="stylesheet" type="text/css" />
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="./Root/static/css/estilo.css">
-        <title>Esquinagato</title>
+<!DOCTYPE html>
+<html lang="en">
 
-    </head>
-    <body>
-        <header>
-            <!-- Barra encabezado -->
-            <div class="barrannavy">
-                <p class="psin-margen" >Festival del Gato Mao: Grandes Ofertas</p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esquinagato</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/estilo.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Barra encabezado -->
+        <div class="barrannavy bg-light p-2">
+            <div class="container d-flex justify-content-between align-items-center">
+                <p class="psin-margen mb-0">Festival del Gato Mao: Grandes Ofertas</p>
                 <div>
-                    <select>
+                    <select class="custom-select d-inline-block mr-2">
                         <option>Español</option>
                     </select>
-                    <select>
+                    <select class="custom-select d-inline-block">
                         <option>COL$</option>
                     </select>
                 </div>
             </div>
-            <!-- FIN Barra encabezado -->
-    
-            <!-- Barra Menú -->
-            <div class="barrazul">
-    
-                <!-- LOGO--> <img class="logo" src="../asset/loguito.png" alt="Logo">
+        </div>
+        <!-- FIN Barra encabezado -->
+
+        <!-- Barra Menú -->
+        <div class="barrazul bg-primary text-white py-2">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- LOGO-->
+                <img class="logo" src="../asset/loguito.png" alt="Logo" style="max-height: 50px;">
                 
                 <!-- Barra de Busqueda-->
                 <div class="search-container">
-                    <form action="/buscar" method="get">
-                        <input type="text" placeholder="Buscar..." name="busqueda">
-                        <button type="submit">Buscar</button>
+                    <form action="/buscar" method="get" class="form-inline">
+                        <input class="form-control mr-2" type="text" placeholder="Buscar..." name="busqueda">
+                        <button class="btn btn-light" type="submit">Buscar</button>
                     </form>
                 </div>
-    
+
                 <!-- Botones-->
                 <nav>
                     <ul class="nav">
-                        <li><a class="a" href="#">Categorías</a></li>
-                        <li><a class="a" href="#">Colecciones</a></li>
-                        <li><a class="a" href="#">Ofertas</a></li>
-                        <li><a class="a" href="#">Mis compras</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">Categorías</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">Colecciones</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">Ofertas</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">Mis compras</a></li>
                     </ul>
                 </nav>
-    
             </div>
-            <!-- FIN Barra Menú -->
-        </header>
-        <main>
-            <section>
-            <div class="banneresquina"> <!-- este es el contenedor grande-->
-                <div> <!-- columna1-->
-                    <img class="tuki" src="../asset/gatomiron.jpg" alt="Imagen de la esquina">
-                    
-                </div>
-                
+        </div>
+        <!-- FIN Barra Menú -->
+    </header>
 
-                <div class="texto-esquina">
-                    <p style="color: #F76E16; font-size: 20px; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);">La esquina del Gato</p>
-                    <p style="color: #F76E16; font-size: 24px; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);">COLECCIONES ESPECIALES</p>
-                    <p style="color: #000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <main>
+        <section>
+            <div class="banneresquina d-flex flex-wrap">
+                <div class="col-md-4">
+                    <img class="tuki img-fluid" src="../asset/gatomiron.jpg" alt="Imagen de la esquina">
+                </div>
+
+                <div class="col-md-4 texto-esquina text-center d-flex flex-column justify-content-center align-items-center">
+                    <p class="text-warning font-weight-bold" style="font-size: 20px;">La esquina del Gato</p>
+                    <p class="text-warning font-weight-bold" style="font-size: 24px;">COLECCIONES ESPECIALES</p>
+                    <p class="text-dark"> Desde elegantes accesorios hasta juguetes innovadores, cada artículo está cuidadosamente seleccionado para proporcionar a tu gato comodidad, entretenimiento y estilo.</p>
                     <div class="boton-medio">
-                        <button style="background-color: #FBEECB; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);">
-                            <span style="color: #000; font-weight: bold;">Conocer Más</span>
+                        <button class="btn" style="background-color: #FBEECB; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);">
+                            <span class="text-dark font-weight-bold">Conocer Más</span>
                         </button>
                     </div>
-                </div> <!--fin columna2-->
+                </div>
 
-
-
-                <div class="esquina-derecha">
-                    <img class="tuki" src="../asset/colespecial-removebg-preview.png" alt="Imagen Gabetagato">
-
-                    <!--<img src="../asset/hipogato-removebg-preview.png" alt="Imagen Hipogato">-->
-                </div> <!--fin columna3-->
-
-
-            </div> <!-- aqui termina el cotenedor grande-->
-     
+                <div class="col-md-4 esquina-derecha text-center">
+                    <img class="tuki img-fluid" src="../asset/colespecial-removebg-preview.png" alt="Imagen Gabetagato">
+                </div>
+            </div>
         </section>
-            
-        
-        
-           <!-- Sección DE ICONOS -->        
-        
-            <section class="tres-iconos">
 
-                <div class="icono">
-                    <img src="../asset/cat.png" alt="Icono 1">
-                    <p><b>Lorem ipsum</b></p>
-                </div>
-
-                <div class="icono">
-                    <img src="../asset/cat.png" alt="Icono 1">
-                    <p><b>Lorem ipsum</b></p>
-                </div>
-
-                <div class="icono">
-                    <img src="../asset/cat.png" alt="Icono 1">
-                    <p><b>Lorem ipsum</b></p>
-                </div>
-        
-            </section>
-
-
-
+        <!-- Sección DE ICONOS -->
+        <section class="tres-iconos d-flex justify-content-around">
+            <div class="icono text-center">
+                <img src="../asset/cat.png" alt="Icono 1" class="img-fluid">
+                <p><b>Lorem ipsum</b></p>
+            </div>
+            <div class="icono text-center">
+                <img src="../asset/cat.png" alt="Icono 2" class="img-fluid">
+                <p><b>Lorem ipsum</b></p>
+            </div>
+            <div class="icono text-center">
+                <img src="../asset/cat.png" alt="Icono 3" class="img-fluid">
+                <p><b>Lorem ipsum</b></p>
+            </div>
+        </section>
 
         <!-- Sección de cartas -->
         <section class="seccion-colecciones">
-            <div class="grid-container">
-                <div class="contenedor">
-                    <img src="../asset/Torre.jpg" alt="Torre Michi" class="producto-imagen">
-                    <h4><b>Torre Michi</b></h4>
-                    <div class="puntuacion">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
+            <div class="container">
+                <div class="row">
+                    <!-- Repetir este bloque por cada carta -->
+                    <div class="col-md-4 mb-4">
+                        <div class="contenedor card">
+                            <img src="../asset/Torre.jpg" alt="Torre Michi" class="card-img-top producto-imagen">
+                            <div class="card-body text-center">
+                                <h4><b>Torre Michi</b></h4>
+                                <div class="puntuacion">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p class="precio">$150.000COP</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="precio">$150.000COP</p>
-                </div>
-
-                <div class="contenedor">
-                    <img src="../asset/Torre.jpg" alt="Torre Michi" class="producto-imagen">
-                    <h4><b>Torre Michi</b></h4>
-                    <div class="puntuacion">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
+                    <div class="col-md-4 mb-4">
+                    <div class="contenedor card">
+                        <img src="../asset/Torre.jpg" alt="Torre Michi" class="card-img-top producto-imagen">
+                        <div class="card-body text-center">
+                            <h4><b>Rascador de Diseño "Elegance"</b></h4>
+                            <div class="puntuacion">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="precio">$150.000COP</p>
+                        </div>
                     </div>
-                    <p class="precio">$150.000COP</p>
                 </div>
-
-                <div class="contenedor">
-                    <img src="../asset/Torre.jpg" alt="Torre Michi" class="producto-imagen">
-                    <h4><b>Torre Michi</b></h4>
-                    <div class="puntuacion">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
+                <div class="col-md-4 mb-4">
+                        <div class="contenedor card">
+                            <img src="../asset/Torre.jpg" alt="Torre Michi" class="card-img-top producto-imagen">
+                            <div class="card-body text-center">
+                                <h4><b>Cama Premium "Purrfect Comfort"</b></h4>
+                                <div class="puntuacion">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p class="precio">$150.000COP</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="precio">$150.000COP</p>
-                </div>
-
-                <div class="contenedor">
-                    <img src="../asset/Torre.jpg" alt="Torre Michi" class="producto-imagen">
-                    <h4><b>Torre Michi</b></h4>
-                    <div class="puntuacion">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
+                    <div class="col-md-4 mb-4">
+                        <div class="contenedor card">
+                            <img src="../asset/Torre.jpg" alt="Torre Michi" class="card-img-top producto-imagen">
+                            <div class="card-body text-center">
+                                <h4><b>Túnel de Juego "Fun Hideaway"</b></h4>
+                                <div class="puntuacion">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p class="precio">$150.000COP</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="precio">$150.000COP</p>
-                </div>
-
-                <div class="contenedor">
-                    <img src="../asset/Torre.jpg" alt="Torre Michi" class="producto-imagen">
-                    <h4><b>Torre Michi</b></h4>
-                    <div class="puntuacion">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
+                    <div class="col-md-4 mb-4">
+                        <div class="contenedor card">
+                            <img src="../asset/Torre.jpg" alt="Torre Michi" class="card-img-top producto-imagen">
+                            <div class="card-body text-center">
+                                <h4><b>Árbol de Escalada "Safari Chic"</b></h4>
+                                <div class="puntuacion">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p class="precio">$150.000COP</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="precio">$150.000COP</p>
-                </div>
-
-                <div class="contenedor">
-                    <img src="../asset/Torre.jpg" alt="Torre Michi" class="producto-imagen">
-                    <h4><b>Torre Michi</b></h4>
-                    <div class="puntuacion">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
+                    <div class="col-md-4 mb-4">
+                        <div class="contenedor card">
+                            <img src="../asset/Torre.jpg" alt="Torre Michi" class="card-img-top producto-imagen">
+                            <div class="card-body text-center">
+                                <h4><b>Casita de Madera "Cozy Cottage"</b></h4>
+                                <div class="puntuacion">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p class="precio">$150.000COP</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="precio">$150.000COP</p>
-                </div>
-
-                <div class="contenedor">
-                    <img src="../asset/Torre.jpg" alt="Torre Michi" class="producto-imagen">
-                    <h4><b>Torre Michi</b></h4>
-                    <div class="puntuacion">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p class="precio">$150.000COP</p>
-                </div>
-
-                <div class="contenedor">
-                    <img src="../asset/Torre.jpg" alt="Torre Michi" class="producto-imagen">
-                    <h4><b>Torre Michi</b></h4>
-                    <div class="puntuacion">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p class="precio">$150.000COP</p>
-                </div>
-
-
-
-            </div>
-            
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-        <footer class="footer">
-            <div class="footer-content">
-                <img class="logo" src="../asset/loguito.png" alt="Logo">
-                <div class="columna">
-                    <h3 class="titulo-columna">Acerca de:</h3>
-                    <p class="texto-columna">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="columna">
-                    <h3 class="titulo-columna">Contacto</h3>
-                    <p class="texto-columna">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="siguenos">
-                    <p class="texto-siguenos">Síguenos en:</p>
-                    <div class="redes-sociales">
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    </div> 
+                    <!-- Fin bloque carta -->
                 </div>
             </div>
-        </footer>
         </section>
-        </body>
-        </html>
+    </main>
+
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="columna mb-4 mb-md-0">
+                <h3 class="titulo-columna">Acerca de Nosotros</h3>
+                <p class="texto-columna">Somos una tienda dedicada al cuidado y bienestar de tu mascota.</p>
+            </div>
+            <div class="columna mb-4 mb-md-0">
+                <h3 class="titulo-columna">Contacto</h3>
+                <p class="texto-columna">Teléfono: 123-456789<br>Email: info@esquinagato.com</p>
+            </div>
+            <div class="siguenos text-center">
+                <h3 class="texto-siguenos">Síguenos en redes sociales</h3>
+                <div class="redes-sociales">
+                    <a href="#" class="social-icon text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon text-white mx-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon text-white mx-2"><i class="fab fa-instagram"></i></a>
+                    <!-- Agregar más redes sociales según sea necesario -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

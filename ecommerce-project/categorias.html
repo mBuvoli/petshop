@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    
+    <!-- Tu archivo CSS si es necesario -->
+    <link rel="stylesheet" href="../css/estilo.css">
+    
+    <title>Esquinagato</title>
+    
+    <style>
+        body {
+            background-image: url('../asset/img/fondo2.png');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .logo {
+            max-width: 150px;
+        }
+        .barrannavy, .barrazul {
+            color: #fff;
+        }
+        .barrannavy {
+            background-color: #333;
+            padding: 10px;
+        }
+        .barrazul {
+            background-color: #0044cc;
+            padding: 10px;
+        }
+        .search-container input {
+            width: 80%;
+            margin-right: 10px;
+        }
+        .search-container button {
+            background-color: #fff;
+            border: none;
+            color: #0044cc;
+        }
+        .texto-estilizado-bold {
+            font-weight: bold;
+        }
+        .texto-estilizado {
+            font-size: 1.2rem;
+        }
+        .botonver a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .titulo-colecciones, .titulo-consiente, .titulo-favoritos {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .cartas2, .cartas3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .producto-categoria, .producto-consiente, .producto-favorito {
+            margin: 10px;
+        }
+        .contenedor-producto, .contenedor-consiente, .contenedor {
+            text-align: center;
+        }
+        .imagen-producto, .imagen-consiente, .imagen-favorito {
+            width: 100%;
+            height: auto;
+        }
+        .scroll-arrow {
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .columna, .siguenos {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Barra encabezado -->
+        <div class="barrannavy d-flex justify-content-between align-items-center">
+            <p class="mb-0">Festival del Gato Mao: Grandes Ofertas</p>
+            <div class="d-flex">
+                <select class="form-control form-control-sm mx-2">
+                    <option>Español</option>
+                </select>
+                <select class="form-control form-control-sm mx-2">
+                    <option>COL$</option>
+                </select>
+            </div>
+        </div>
+        <!-- FIN Barra encabezado -->
+
+        <!-- Barra Menú -->
+        <div class="barrazul d-flex flex-column flex-md-row align-items-center justify-content-between p-3">
+            <!-- LOGO -->
+            <img class="logo" src="../asset/loguito.png" alt="Logo">
+            
+            <!-- Barra de Busqueda -->
+            <div class="search-container d-flex flex-grow-1 justify-content-center mt-2 mt-md-0">
+                <form action="/buscar" method="get" class="d-flex w-100">
+                    <input type="text" placeholder="Buscar..." name="busqueda" class="form-control">
+                    <button type="submit" class="btn btn-light ml-2">Buscar</button>
+                </form>
+            </div>
+
+            <!-- Botones -->
+            <nav class="mt-2 mt-md-0">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Categorías</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Colecciones</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Ofertas</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Mis compras</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- FIN Barra Menú -->
+    </header>
+
+    <main>
+        <!-- MAIN -->
+
+        <!-- Banner Principal -->
+        <section class="seccionmain text-center text-white py-5">
+            <div class="container">
+                <p class="texto-estilizado-bold">¡Celebra el Festival del Gato Mao con nosotros!</p>
+                <p class="texto-estilizado">¡Torres y muebles para gatos en descuento! 🐱✨</p>
+                <div class="botonver mt-3">
+                    <a class="btn btn-primary" href="#">Ver Más</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección Categorías -->
+        <section class="seccion-categorias py-5">
+            <h2 class="titulo-colecciones text-center text-white">Categorías</h2>
+            <div class="cartas2 container">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-2 producto-categoria">
+                        <a href="#">
+                            <div class="contenedor-producto">
+                                <img src="../asset/Torre.jpg" alt="Torre Michi" class="imagen-producto img-fluid">
+                                <p><b>Juguetes</b></p>                            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 producto-categoria">
+                        <a href="#">
+                            <div class="contenedor-producto">
+                                <img src="../asset/llopito.jpg" alt="Juguete Llopito" class="imagen-producto img-fluid">
+                                <p><b>Muebles</b></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 producto-categoria">
+                        <a href="#">
+                            <div class="contenedor-producto">
+                                <img src="../asset/llopito.jpg" alt="Juguete Llopito" class="imagen-producto img-fluid">
+                                <p><b>Muebles</b></p>
+                            </div>
+                        </a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="linea-separadora">
+        </section>
+        
+        <!-- Sección de Colecciones Personalizadas -->
+        <section class="seccion-categorias py-5">
+            <h2 class="titulo-colecciones text-center text-white">Creaciones Personalizadas</h2>
+            <div class="contenedor-coleccion container d-flex flex-column flex-md-row align-items-center">
+                <img src="../asset/gatohobi.jpg" alt="Colección 1" class="img-fluid col-md-6">
+                <div class="descripcion-coleccion col-md-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <hr class="linea-separadora">
+        </section>
+        <!-- Fin de la sección de Colecciones Personalizadas -->
+
+        <!-- Sección de Consiéntete Gato -->
+        <section class="seccion-consiente py-5">
+            <h2 class="titulo-consiente text-center text-white">Nuestros Servicios</h2>
+            <div class="cartas3 container">
+                <div class="row">
+                    <div class="col-12 col-md-4 producto-consiente">
+                        <a href="#">
+                            <div class="contenedor-consiente text-center">
+                                <img src="../asset/Torre.jpg" alt="Servicio 1" class="imagen-consiente img-fluid">
+                                <p><b>Servicio 1</b></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4 producto-consiente">
+                        <a href="#">
+                            <div class="contenedor-consiente text-center">
+                                <img src="../asset/Torre.jpg" alt="Servicio 2" class="imagen-consiente img-fluid">
+                                <p><b>Servicio 2</b></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4 producto-consiente">
+                        <a href="#">
+                            <div class="contenedor-consiente text-center">
+                                <img src="../asset/Torre.jpg" alt="Servicio 3" class="imagen-consiente img-fluid">
+                                <p><b>Servicio 3</b></p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Repetir este bloque para más productos -->
+                </div>
+            </div>
+            <hr class="linea-separadora">
+        </section>
+        <!-- Fin de la sección de Consiéntete Gato -->
+
+        <!-- Sección de Favoritos del Dr. Apapa -->
+        <section class="seccion-favoritos py-5">
+            <h2 class="titulo-favoritos text-center text-white">Favoritos Del Dr. Apapa</h2>
+            <div class="contenedor-cartas container">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3 producto-favorito">
+                        <div class="contenedor text-center">
+                            <img src="../asset/producto1.jpg" alt="Producto 1" class="imagen-favorito img-fluid">
+                            <p class="text-warning"><b>Nombre del Producto 1</b></p>
+                            <div class="puntuacion">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="precio">$100.000COP</p>
+                            <button class="btn btn-warning">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 producto-favorito">
+                        <div class="contenedor text-center">
+                            <img src="../asset/producto2.jpg" alt="Producto 2" class="imagen-favorito img-fluid">
+                            <p class="text-warning"><b>Nombre del Producto 2</b></p>
+                            <div class="puntuacion">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="precio">$80.000COP</p>
+                            <button class="btn btn-warning">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 producto-favorito">
+                        <div class="contenedor text-center">
+                            <img src="../asset/producto3.jpg" alt="Producto 3" class="imagen-favorito img-fluid">
+                            <p class="text-warning"><b>Nombre del Producto 3</b></p>
+                            <div class="puntuacion">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="precio">$120.000COP</p>
+                            <button class="btn btn-warning">Comprar</button>
+                        </div>
+                    </div>
+                    <!-- Nuevos productos añadidos -->
+                    <div class="col-12 col-md-4 col-lg-3 producto-favorito">
+                        <div class="contenedor text-center">
+                            <img src="../asset/producto-extra4.jpg" alt="Producto Extra 4" class="imagen-favorito img-fluid">
+                            <p class="text-warning"><b>Nombre del Producto 4</b></p>
+                            <div class="puntuacion">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="precio">$90.000COP</p>
+                            <button class="btn btn-warning">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 producto-favorito">
+                        <div class="contenedor text-center">
+                            <img src="../asset/producto-extra5.jpg" alt="Producto Extra 5" class="imagen-favorito img-fluid">
+                            <p class="text-warning"><b>Nombre del Producto 5</b></p>
+                            <div class="puntuacion">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="precio">$110.000COP</p>
+                            <button class="btn btn-warning">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 producto-favorito">
+                        <div class="contenedor text-center">
+                            <img src="../asset/producto-extra6.jpg" alt="Producto Extra 6" class="imagen-favorito img-fluid">
+                            <p class="text-warning"><b>Nombre del Producto 6</b></p>
+                            <div class="puntuacion">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="precio">$70.000COP</p>
+                            <button class="btn btn-warning">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="linea-separadora">
+        </section>
+        <!-- Fin de la sección de Favoritos del Dr. Apapa -->
+    </main>
+
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="columna mb-4 mb-md-0">
+                <h3 class="titulo-columna">Acerca de Nosotros</h3>
+                <p class="texto-columna">Somos una tienda dedicada al cuidado y bienestar de tu mascota.</p>
+            </div>
+            <div class="columna mb-4 mb-md-0">
+                <h3 class="titulo-columna">Contacto</h3>
+                <p class="texto-columna">Teléfono: 123-456789<br>Email: info@esquinagato.com</p>
+            </div>
+            <div class="siguenos text-center">
+                <h3 class="texto-siguenos">Síguenos en redes sociales</h3>
+                <div class="redes-sociales">
+                    <a href="#" class="social-icon text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon text-white mx-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon text-white mx-2"><i class="fab fa-instagram"></i></a>
+                    <!-- Agregar más redes sociales según sea necesario -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap y FontAwesome -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zyh93S6n7r9OqXgKzYXnix6dDxIkv6J0/fcb5da" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb9dF52z4Roh2wXl6m0hE4OT8nYVj9Uq7imK8T8xuW9oL0FTr" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-1gXwsmWchY9k9PQxg4wx+eOt8PRA+oyz3d+6tFMEIR3SZ02RrjYDp5Q4O+iW0zW6" crossorigin="anonymous"></script>
+</body>
+</html>
