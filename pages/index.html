@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="La Esquina del Gato ofrece grandes ofertas en muebles y accesorios para gatos. Descubre nuestras colecciones y disfruta de descuentos exclusivos.">
+  <meta name="keywords" content="muebles para gatos, accesorios para gatos, ofertas, festival del gato, colecciones, juguetes para gatos">
+  <title>La Esquina del Gato</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="styles.css" rel="stylesheet">
+  <style>
+    
+    .btn-primary {
+      background-color: #ff6f00;
+      border-color: #ff6f00;
+    }
+
+    .btn-primary:hover {
+      background-color: #e65c00;
+      border-color: #e65c00;
+    }
+
+    .btn-secondary {
+      background-color: #ff6f00;
+      border-color: #ff6f00;
+    }
+
+    .btn-secondary:hover {
+      background-color: #e65c00;
+      border-color: #e65c00;
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .banner {
+      background-color: #F9B73C;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .banner h1,
+    .banner p {
+      color: #e65c00;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section-content {
+      padding: 20px 0;
+    }
+
+    .footer {
+      background-color: #343a40;
+    }
+
+    .social-icon {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 767px) {
+      .banner h1 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .card-img-top {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="barrannavy d-flex justify-content-between align-items-center bg-light p-2">
+      <p class="mb-0">Festival del Gato Mao: Grandes Ofertas</p>
+      <div class="d-flex">
+        <select class="form-control form-control-sm mx-2">
+          <option>Español</option>
+        </select>
+        <select class="form-control form-control-sm mx-2">
+          <option>COL$</option>
+        </select>
+      </div>
+    </div>
+    <div class="barrazul bg-primary text-white py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <img class="logo" src="../asset/loguito.png" alt="Logo de La Esquina del Gato" style="max-height: 50px;">
+        <div class="search-container">
+          <form action="/buscar" method="get" class="form-inline">
+            <input type="text" class="form-control mr-2" placeholder="Buscar..." name="busqueda">
+            <button type="submit" class="btn btn-primary">Buscar</button>
+          </form>
+        </div>
+        <nav>
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link text-white" href="./categorias.html">Categorías</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="./colecciones.html">Colecciones</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="./nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="./Blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Ofertas</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Mis compras</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Header con el banner de ofertas -->
+  <header class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <img class="tuki img-fluid" src="../asset/loguito.png" alt="Imagen de la esquina">
+          <h1>¡Grandes Ofertas en La Esquina del Gato!</h1>
+          <p>Descuentos de hasta el 50% en productos seleccionados.</p>
+          <a href="#" class="btn btn-primary">Ver Ofertas</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección de categorías -->
+  <section class="categories my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <div class="card">
+            <img src="../asset/muebles.jpg" class="card-img-top" alt="Colecciones de muebles para gatos">
+            <div class="card-body">
+              <h2 class="card-title">Colecciones</h2>
+              <p class="card-text">Descubre nuestra exclusiva gama de colecciones personalizadas para muebles diseñados especialmente para tus mascotas.</p>
+              <a href="#" class="btn btn-secondary">Ver Más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="card">
+            <img src="../asset/Post de Instagram Descuento Moderno Azul.jpg" class="card-img-top" alt="Festival del Gato Mao">
+            <div class="card-body">
+              <h2 class="card-title">Festival del Gato Mao</h2>
+              <p class="card-text">Precios especiales en artículos que combinan estilo, funcionalidad y amor por los animales.</p>
+              <a href="#" class="btn btn-secondary">Ver Más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="card">
+            <img src="../asset/gato1.jpg" class="card-img-top" alt="Juguetes para gatos">
+            <div class="card-body">
+              <h2 class="card-title">Juguetes</h2>
+              <p class="card-text">Juguetes para mascotas, diseñados para ofrecer diversión y estimulación únicas a tu amigo peludo.</p>
+              <a href="#" class="btn btn-secondary">Ver Más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección sobre el CEO -->
+  <section class="ceo my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="../asset/ceo.jpg" alt="CEO de La Esquina del Gato" class="img-fluid rounded-circle">
+        </div>
+        <div class="col-md-6">
+          <h2>Conoce al CEO</h2>
+          <p>En el corazón de nuestra empresa se encuentra un líder único y excepcional: Maow, nuestro CEO y fundador. Maow no es un CEO común, sino un gato con una pasión inigualable por el diseño de muebles cómodos y ecológicos para felinos. Con un pelaje elegante y un toque de sofisticación felina, Maow ha llevado la innovación en el diseño de muebles para gatos a nuevas alturas.</p>
+          <p>Maow ha dedicado su vida a comprender las necesidades y preferencias de los gatos. Con años de experiencia en el campo, ha perfeccionado la creación de muebles que ofrecen comodidad y estilo, adaptándose a las exigencias de sus compañeros felinos. Su enfoque en la calidad y el diseño se refleja en cada pieza, garantizando que cada mueble no solo sea un placer para los gatos, sino también una adición elegante a cualquier hogar.</p>
+          <p>En La Esquina del Gato, la calidad es nuestra prioridad. Maow personalmente prueba todos los productos antes de que lleguen a nuestras estanterías. Desde camas acogedoras hasta rascadores innovadores, Maow se asegura de que cada diseño cumpla con los estándares más altos de confort y durabilidad.</p>
+          <p>Maow sigue impulsando la innovación en el diseño de muebles para gatos, con una dedicación inquebrantable a la sostenibilidad y el bienestar felino. Su visión continúa inspirando al equipo de La Esquina del Gato para desarrollar soluciones creativas y funcionales que mejoren la vida de los gatos en todo el mundo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section id="contacto" class="section-content bg-light">
+    <h2 class="section-title">Contacto</h2>
+    <div class="container">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="name">Nombre</label>
+            <input type="text" class="form-control" id="name" placeholder="Tu Nombre" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="Tu Correo Electrónico" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Tu Mensaje" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="columna mb-4 mb-md-0">
+        <h3 class="titulo-columna">Acerca de Nosotros</h3>
+        <p class="texto-columna">Somos una tienda dedicada al cuidado y bienestar de tu mascota.</p>
+      </div>
+      <div class="columna mb-4 mb-md-0">
+        <h3 class="titulo-columna">Contacto</h3>
+        <p class="texto-columna">Teléfono: 123-456789<br>Email: info@esquinagato.com</p>
+      </div>
+      <div class="siguenos text-center">
+        <h3 class="texto-siguenos">Síguenos en redes sociales</h3>
+        <div class="redes-sociales">
+          <a href="#" class="social-icon text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon text-white mx-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon text-white mx-2"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts de Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zyh93S6n7r9OqXgKzYXnix6dDxIkv6J0/fcb5da" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb9dF52z4Roh2wXl6m0hE4OT8nYVj9Uq7imK8T8xuW9oL0FTr" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-1gXwsmWchY9k9PQxg4wx+eOt8PRA+oyz3d+6tFMEIR3SZ02RrjYDp5Q4O+iW0zW6" crossorigin="anonymous"></script>
+</body>
+
+</html>

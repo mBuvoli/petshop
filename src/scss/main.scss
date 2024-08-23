@@ -1,0 +1,538 @@
+@import 'variables';
+@import 'mixins';
+@import 'components';
+@import 'layout';
+// Variables
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$bg-color: #343a40;
+$text-color: #ffffff;
+$border-color: #dee2e6;
+
+// Estilos Generales
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: $bg-color;
+}
+
+.barrannavy {
+    background-color: #212529;
+    color: $text-color;
+}
+
+.barrazul {
+    background-color: $primary-color;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.search-container {
+    .form-control {
+        border-radius: 0;
+    }
+}
+
+nav ul {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: $text-color;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.seccionmain {
+    background-color: $primary-color;
+    padding: 50px 0;
+    .texto-estilizado-bold {
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .texto-estilizado {
+        font-size: 1.25em;
+    }
+    .botonver a {
+        color: $text-color;
+        text-decoration: none;
+        &:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+    }
+}
+
+.titulo-colecciones,
+.titulo-consiente,
+.titulo-favoritos {
+    color: $text-color;
+    font-weight: bold;
+}
+
+.linea-separadora {
+    border: 0;
+    border-top: 1px solid $border-color;
+    margin: 20px 0;
+}
+
+.imagen-producto,
+.imagen-consiente,
+.imagen-favorito {
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.contenedor-producto,
+.contenedor-consiente,
+.contenedor {
+    background-color: #ffffff;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.puntuacion i {
+    color: #ffc107;
+}
+
+// Responsive
+@media (max-width: 767px) {
+    .search-container {
+        margin-top: 10px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .seccionmain {
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .contenedor-coleccion {
+        flex-direction: row;
+    }
+}
+// Estilos globales
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+  }
+  
+  header {
+    background-color: #0F3452;
+    color: white;
+  }
+  
+  // Barra de navegación
+  .barrannavy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  // Festival del Gato MAO: Grandes Ofertas
+  .psin-margen {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  // Menú de Navegación
+  .barrazul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: #154C79;
+  }
+  
+  .logo {
+    max-height: 40px; // Reduce el tamaño del logo
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+  
+    input[type="text"] {
+      padding: 8px;
+      margin-right: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  
+    button {
+      padding: 8px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  }
+  
+  .nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  
+    li {
+      margin-right: 20px;
+    }
+  
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  
+  // Banner principal
+  .seccionmain {
+    background-color: #FFE184;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .column-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .texto-estilizado {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #EE940D;
+    font-weight: thin;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .texto-estilizado-bold {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    color: #EE940D;
+    font-weight: bold; // Cambiado a bold para negrita
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .descuento {
+    background-color: #FFE184;
+    padding: 20px;
+    border-radius: 5px;
+    width: 55%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .botonver {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0BBEC9;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px 20px;
+    width: fit-content;
+  
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  
+  // Destacados
+  .destacados {
+    background-color: #FFEDC1;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .prods {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .paw {
+    width: 100px;
+    height: auto;
+  }
+  
+  .pawnav {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  
+    li {
+      display: inline;
+      margin: 0 10px;
+    }
+  
+    a {
+      text-decoration: none;
+      color: #333;
+      font-size: 20px;
+    }
+  }
+  
+  // Estilos generales para el contenedor principal
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+  
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  
+    @media (max-width: 768px) {
+      padding: 10px;
+    }
+  
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+  
+    &-img-top {
+      max-width: 150px;
+      height: auto;
+    }
+  
+    img {
+      max-width: 200px;
+      height: 200px;
+      border-radius: 8px;
+    }
+  
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    p {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+  // Media queries para responsive design
+  @media (max-width: 480px) {
+    .icono img {
+      max-width: 40px;
+    }
+  
+    .card-img-top {
+      max-width: 100px;
+    }
+  
+    .producto-imagen {
+      max-width: 80px;
+    }
+  }
+  
+  .container, .card, .contenedor {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .cartas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .contenedor {
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    position: relative;
+  
+    .producto-imagen {
+      max-width: 100px; // Ajusta el tamaño de las imágenes del producto
+      height: auto;
+    }
+  
+    .producto-galletita {
+      width: 188px;
+      height: 188px;
+      border-radius: 10px 10px 0 0;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .naranja {
+    color: #FFA52E;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .fas, .far, .fab {
+    font-size: 1.5rem; // Ajusta el tamaño de los iconos
+  }
+  
+  // ABOUT US
+  .seccion-nosotros {
+    background-image: url("../asset/img/aboutus.png"); // Corrección de la ruta de la imagen
+    background-size: cover;
+    background-position: center; // Para centrar la imagen de fondo
+    height: 330px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; // Para centrar el contenido verticalmente
+    align-items: center; // Para centrar el contenido horizontalmente
+  
+    .nosotros-texto {
+      background-color: rgb(24, 31, 85);
+      padding: 5px;
+      border-radius: 5px;
+      width: 30%;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      color: #DC91CC;
+    }
+  }
+  
+  // CONTACTANOS
+  .contactanos {
+    background-color: #154C79;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 20px;
+  
+    .contacto {
+      display: block;
+  
+      .contacto-cols {
+        display: flex;
+        justify-content: space-evenly;
+  
+        .contacto-info {
+          display: block;
+          text-align: left;
+        }
+      }
+    }
+  
+    .formulario-container {
+      display: block;
+      align-items: center;
+  
+      .barrasus {
+        margin-bottom: 20px;
+      }
+  
+      .suscribete {
+        padding: 10px;
+        margin-right: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        width: 55%;
+        margin-bottom: 15px;
+      }
+  
+      .botonsus {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #45a049;
+        }
+      }
+  
+      .ubicacion {
+        margin-bottom: 20px;
+      }
+  
+      .barrasformulario {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        width: 70%;
+      }
+  
+      .botones {
+        margin-top: 10px;
+  
+        .enviar,
+        .resetear {
+          background-color: #FFA52E;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          padding: 10px 20px;
+          font-size: 16px;
+          margin-right: 10px;
+  
+          &:hover {
+            background-color: #ff8c00;
+          }
+        }
+      }
+    }
+  }
